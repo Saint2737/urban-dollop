@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Moderna
+  * Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">SmartFinance</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="starter-page.html">Home</a></li>
+          <li><a href="Investments.html">Investments</a></li>
+          <li><a href="Budget.html">Budget</a></li>
+          <li><a href="Expenses.html">Expenses</a></li>
+          <li><a href="Debt.html">Debt</a></li>
+          <li><a href="Forecasting.html">Forecasting</a></li>
+          <li><a href="Credit.html">Credit</a></li>
+                    
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container position-relative">
+        <h1>Performance Forecasting</h1>
+        <p>Conducting Sensitivity Analysis on Profit allows us to predict performance.</p>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="starter-page.html">Home</a></li>
+            <li class="current">Forecasting</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+<section>
+  <div class="container-fluid">
+    <h3 style="margin-top: 20px;"><strong>Profit Sensitivity Analysis Tool</strong></h3>
+    <hr style="border: 4px solid #252323; width: 40%;">
+    <p>Explore how changes in financial factors impact profit forecasts</p>
+
+    <div class="row">
+
+      <!-- Column 1: Base Case Inputs -->
+      <div class="col-md-4">
+        <div class="card" style="width: 100%;">
+          <div class="card-body">
+            <h5 class="card-title" style="font-size: 2rem;"><strong>Enter your Business' Base Case Values</strong></h5>
+            
+            <form id="inputForm">
+            <div class="mb-3">
+              <label class="form-label">Revenue</label>
+              <input type="number" class="form-control" id="revenueInput" placeholder="Enter your Revenue/Income">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Cost Of Goods Sold</label>
+              <input type="number" class="form-control" id="cogsInput" placeholder="Enter COGS">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Fixed Costs</label>
+              <input type="number" class="form-control" id="fixedInput" placeholder="Enter fixed costs">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Variable Costs</label>
+              <input type="number" class="form-control" id="variableInput" placeholder="Enter variable costs">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Tax Rate (%)</label>
+              <input type="number" class="form-control" id="taxInput" placeholder="Enter the tax rate">
+            </div>
+
+            <button id="submit" class="btn btn-primary">Submit</button>
+            
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Column 2: Sensitivity Analysis Factors -->
+      <div class="col-md-4">
+        <div class="card" style="width: 100%; background-color:#254153;">
+          <div class="card-body">
+            <h5 class="card-title" style="font-size: 2rem; color: white;"><strong>Conduct Sensitivity Analysis📈</strong></h5>
+            <ul class="list-group">
+
+              <!-- Revenue -->
+              
+       <!-- Revenue -->
+<li class="list-group-item" style="background: transparent; border: none;">
+  <div onclick="toggleForm('formRevenue', this)" class="clickable-text text-light d-flex justify-content-between align-items-center">
+    <span>Revenue</span>
+    <i class="bi bi-chevron-right text-light"></i>
+  </div>
+  <div id="formRevenue" class="sensitivity-form p-3" style="display: none;">
+    <input type="number" class="form-control mb-2" placeholder="% Change in Revenue" id="revenueChangeInput">
+    <button class="btn btn-outline-light w-100" onclick="analyseRevenue()">Analyse</button>
+    <pre id="resultOutput" style="white-space: pre-line; margin-top: 1em; font-weight: bold; font-size: larger;"></pre>
+
+  </div>
+</li>
+
+<!-- COGS -->
+<li class="list-group-item" style="background: transparent; border: none;">
+  <div onclick="toggleForm('formCogs', this)" class="clickable-text text-light d-flex justify-content-between align-items-center">
+    <span>Cost of Goods Sold</span>
+    <i class="bi bi-chevron-right text-light"></i>
+  </div>
+  <div id="formCogs" class="sensitivity-form p-3" style="display: none;">
+    <input type="number" class="form-control mb-2" placeholder="% Change in COGS" id="cogsChangeInput">
+    <button class="btn btn-outline-light w-100" onclick="analyseCogs()">Analyse</button>
+    <pre id="resultOutput2" style="white-space: pre-line; margin-top: 1em; font-weight: bold; font-size: larger;"></pre>
+
+  </div>
+</li>
+
+<!-- Fixed Costs -->
+<li class="list-group-item" style="background: transparent; border: none;">
+  <div onclick="toggleForm('formFixed', this)" class="clickable-text text-light d-flex justify-content-between align-items-center">
+    <span>Fixed Costs</span>
+    <i class="bi bi-chevron-right text-light"></i>
+  </div>
+  <div id="formFixed" class="sensitivity-form p-3" style="display: none;">
+    <input type="number" class="form-control mb-2" placeholder="% Change in Fixed Costs" id="fixedChangeInput">
+    <button class="btn btn-outline-light w-100" onclick="analyseFixed()">Analyse</button>
+    <pre id="resultOutput3" style="white-space: pre-line; margin-top: 1em; font-weight: bold; font-size: larger;"></pre>
+
+  </div>
+</li>
+
+<!-- Variable Costs -->
+<li class="list-group-item" style="background: transparent; border: none;">
+  <div onclick="toggleForm('formVariable', this)" class="clickable-text text-light d-flex justify-content-between align-items-center">
+    <span>Variable Costs</span>
+    <i class="bi bi-chevron-right text-light"></i>
+  </div>
+  <div id="formVariable" class="sensitivity-form p-3" style="display: none;">
+    <input type="number" class="form-control mb-2" placeholder="% Change in Variable Costs" id="variableChangeInput">
+    <button class="btn btn-outline-light w-100" onclick="analyseVariable()">Analyse</button>
+    <pre id="resultOutput4" style="white-space: pre-line; margin-top: 1em; font-weight: bold; font-size: larger;"></pre>
+
+  </div>
+</li>
+
+<!-- Tax Rate -->
+<li class="list-group-item" style="background: transparent; border: none;">
+  <div onclick="toggleForm('formTax', this)" class="clickable-text text-light d-flex justify-content-between align-items-center">
+    <span>Tax Rate</span>
+    <i class="bi bi-chevron-right text-light"></i>
+  </div>
+  <div id="formTax" class="sensitivity-form p-3" style="display: none;">
+    <input type="number" class="form-control mb-2" placeholder="% Change in Tax Rate" id="taxChangeInput">
+    <button class="btn btn-outline-light w-100" onclick="analyseTax()">Analyse</button>
+    <pre id="resultOutput5" style="white-space: pre-line; margin-top: 1em; font-weight: bold; font-size: larger;"></pre>
+
+  </div>
+</li>
+     </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Column 3: Profit Display -->
+      <div class="col-md-4">
+        <div class="card mt-3" style="width: 100%;">
+          <div class="card-body">
+            <h5 class="card-title" style="font-size: 2rem;"><strong>KBL Profit</strong></h5>
+            <p id="profitOutput" class="card-text" style="font-size: 2rem; background-color: rgb(60, 60, 236); color: white; padding: 10px;">
+              KES 15,400,000
+            </p>
+            <pre id="resultOutput" style="margin-top: 10px;"></pre>
+            <hr style="border: 2px solid #23292d; width: 80%;">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <!----Conduct sensitivity Section -->
+    <section id="sensitivity section" class="sensitivity section">
+
+     
+  <meta charset="UTF-8">
+  <title>Profit Forecast Sensitivity Chart</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<div class="container my-5">
+  <h2 class="mb-4"><strong>📈 Profit Forecast Sensitivity Analysis</strong></h2>
+
+  <div class="row mb-3">
+    <div class="col-md-4">
+      <label for="factorSelect" class="form-label">Select Factor:</label>
+      <select id="factorSelect" class="form-select">
+        <option value="revenue">Revenue</option>
+        <option value="cogs">Cost of Goods Sold (COGS)</option>
+        <option value="variableCosts">Variable Costs</option>
+        <option value="fixedCosts">Fixed Costs</option>
+        <option value="taxRate">Tax Rate</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="card shadow-sm">
+    <div class="card-body">
+      <canvas id="profitChart" height="100"></canvas>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<div style="display: flex; flex-direction: column; gap: 2rem; width: 100%; max-width: 900px; margin: auto;">
+
+<!-- Profit Chart Canvas -->
+ <div style =" width:100%; max-width:800px; height:400px;" >
+<canvas id="profitChart" ></canvas>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Tornado Chart Container -->
+  <div style="width: 100%; max-width: 900px; margin: auto;">
+    <canvas id="tornadoChart"></canvas>
+  </div>
+
+
+<script>
+  // ✅ 1. Define base inputs 
+  const baseValues = {
+    revenue: 400000,
+    cogs: 200000,
+    fixedCosts: 180000,
+    variableCosts: 100000,
+    taxRate: 0.25
+  };
+
+  // ✅ 2. Function to compute net profit based on input values
+  function computeProfit(input) {
+    const grossProfit = input.revenue - input.cogs;
+    const operatingProfit = grossProfit - input.fixedCosts - input.variableCosts;
+    return operatingProfit * (1 - input.taxRate);
+  }
+
+  // ✅ 3. Compute base profit 
+  const baseProfit = computeProfit(baseValues);
+
+  // ✅ 4. Variables we want to test for sensitivity
+  const variables = ['revenue', 'cogs', 'fixedCosts', 'variableCosts', 'taxRate'];
+
+  // ✅ 5. Use consistent percentage change (e.g. ±10%) for sensitivity test
+  const percentChange = 10;
+
+  // ✅ 6. Store profit deltas (change in profit from base) for each variable
+  const profitDeltas = variables.map((key) => {
+    const changedUp = { ...baseValues };     //create copy for +10% change
+    const changedDown = { ...baseValues };   //create copy for -10% change
+
+    // Apply % change to ONLY the current variable
+    if (key === 'taxRate') {
+      changedUp[key] = Math.min(1, baseValues[key] + percentChange / 100);//% change should not go beyond 1
+      changedDown[key] = Math.max(0, baseValues[key] - percentChange / 100);//% change should not go below 0
+    } else {
+      changedUp[key] = baseValues[key] * (1 + percentChange / 100);//incrementing
+      changedDown[key] = baseValues[key] * (1 - percentChange / 100);//decrementing
+    }
+
+    // Compute profit differences (deltas) from base
+    const upProfit = computeProfit(changedUp);
+    const downProfit = computeProfit(changedDown);
+
+    return {
+      variable: key.charAt(0).toUpperCase() + key.slice(1),
+      increase: upProfit - baseProfit,
+      decrease: downProfit - baseProfit
+    };
+  });
+
+  // ✅ 7. Prepare datasets for Chart.js
+  const data = {
+    labels: profitDeltas.map(d => d.variable),
+    datasets: [
+      {
+        label: '+10% Change',
+        data: profitDeltas.map(d => d.increase),
+        backgroundColor: 'rgba(75, 192, 192, 0.8)' // Teal/green
+      },
+      {
+        label: '-10% Change',
+        data: profitDeltas.map(d => d.decrease),
+        backgroundColor: 'rgba(255, 99, 132, 0.8)' // Red/pink
+      }
+    ]
+  };
+
+  // ✅ 8. Chart configuration
+  const config = {
+    type: 'bar',
+    data: data,
+    options: {
+      indexAxis: 'y', // Make it a horizontal bar chart
+      plugins: {
+        title: {
+          display: true,
+          text: 'Tornado Chart: Sensitivity of Profit to ±10% Changes'
+        },
+        tooltip: {
+          callbacks: {
+            label: function (context) {
+              const change = context.raw;
+              const direction = context.dataset.label;
+              const newProfit = baseProfit + change;
+              return `${direction}: Δ $${change.toFixed(0)} → Profit: $${newProfit.toFixed(0)}`;
+            }
+          }
+        }
+      },
+      scales: {
+        x: {
+          title: {
+            display: true,
+            text: 'Change in Profit ($)'
+          },
+          ticks: {
+            callback: value => `$${value.toFixed(0)}`
+          }
+        }
+      }
+    }
+  };
+
+  // ✅ 9. Render the tornado chart
+  new Chart(document.getElementById('tornadoChart'), config);
+</script>
+
+
+
+</div>
+
+
+<script>
+
+  // Base financial values
+  const baseValues2 = {
+    revenue: 500000,
+    cogs: 200000,
+    variableCosts: 100000,
+    fixedCosts: 80000,
+    taxRate: 0.25
+  };
+
+  const sensitivitySteps = [-40, -30, -20, -10, 0, 10, 20, 30, 40];
+  let activeFactor = "revenue";
+
+  // Profit calculation logic
+  function calculateProfit(values) {
+    const grossProfit = values.revenue - values.cogs;
+    const operatingProfit = grossProfit - values.variableCosts - values.fixedCosts;
+    const tax = operatingProfit * values.taxRate;
+    return operatingProfit - tax;
+  }
+
+  const baseProfit2 = calculateProfit(baseValues2);
+
+  // Generate profit projections
+  function generateProjectionData(factor) {
+    return sensitivitySteps.map(percent => {
+      const multiplier = 1 + percent / 100;
+      const updatedValues = { ...baseValues2 };
+
+      if (factor === 'taxRate') {
+        updatedValues[factor] = baseValues2[factor] + (percent / 100);
+      } else {
+        updatedValues[factor] = baseValues2[factor] * multiplier;
+      }
+
+      return calculateProfit(updatedValues);
+    });
+  }
+
+  // Chart initialization
+  const ctx = document.getElementById('profitChart').getContext('2d');
+  const profitChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: sensitivitySteps.map(p => `${p}%`),
+      datasets: [
+        {
+          label: 'Projected Profit',
+          data: generateProjectionData(activeFactor),
+          borderColor: '#007bff',
+          backgroundColor: 'rgba(0, 123, 255, 0.2)',
+          fill: true,
+          tension: 0.3
+        },
+        {
+          label: 'Base Profit',
+          data: sensitivitySteps.map(() => baseProfit2),
+          borderColor: '#28a745',
+          backgroundColor: 'rgba(40, 167, 69, 0.1)',
+          borderDash: [5, 5],
+          fill: false,
+          tension: 0.3
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        title: {
+          display: true,
+          text: `Impact of Revenue Changes on Profit`
+        }
+      },
+      scales: {
+        y: {
+          title: {
+            display: true,
+            text: 'Profit ($)'
+          }
+        },
+        x: {
+          title: {
+            display: true,
+            text: '% Change in Selected Factor'
+          }
+        }
+      }
+    }
+  });
+
+  // Update chart dynamically
+  function updateChart(userInput = null) {
+    const factor = document.getElementById("factorSelect").value;
+    activeFactor = factor;
+
+    const factorLabel = {
+      revenue: 'Revenue',
+      cogs: 'Cost of Goods Sold',
+      fixedCosts: 'Fixed Costs',
+      variableCosts: 'Variable Costs',
+      taxRate: 'Tax Rate'
+    };
+
+    const newData = generateProjectionData(factor);
+
+    // Update existing datasets
+    profitChart.data.datasets[0].data = newData; // Projected profit stays first
+    profitChart.data.datasets[1].data = sensitivitySteps.map(() => baseProfit2); // Reuse base profit
+
+    // Add optional scatter point
+    profitChart.data.datasets = profitChart.data.datasets.filter(ds => ds.type !== 'scatter'); // Remove old scatter
+    if (userInput !== null && sensitivitySteps.includes(userInput)) {
+      const index = sensitivitySteps.indexOf(userInput);
+      profitChart.data.datasets.push({
+        label: 'Selected Change',
+        data: [{
+          x: `${sensitivitySteps[index]}%`,
+          y: newData[index]
+        }],
+        pointBackgroundColor: 'red',
+        pointBorderColor: 'red',
+        pointRadius: 6,
+        type: 'scatter',
+        showLine: false
+      });
+    }
+
+    // Update chart title
+    profitChart.options.plugins.title.text = `Impact of ${factorLabel[factor]} Changes on Profit`;
+
+    profitChart.update();
+  }
+</script>
+
+<script>
+  
+  document.getElementById("submit").addEventListener("click", function (e) {
+    e.preventDefault(); // Prevent page reload
+    updateBaseValuesFromForm();
+
+    baseValues.revenue = parseFloat(document.getElementById("revenueInput").value) || 0;
+    baseValues.cogs = parseFloat(document.getElementById("cogsInput").value) || 0;
+    baseValues.fixedCosts = parseFloat(document.getElementById("fixedInput").value) || 0;
+    baseValues.variableCosts = parseFloat(document.getElementById("variableInput").value) || 0;
+    baseValues.taxRate = parseFloat(document.getElementById("taxInput").value) / 100 || 0;
+
+    
+    const profit = calculateProfit(baseValues);
+   document.getElementById("profitOutput").innerText = `KES ${profit.toLocaleString()}`;
+   updateChart(activeFactor);
+    
+  });
+
+
+  function updateBaseValuesFromForm() {
+  baseValues.revenue = parseFloat(document.getElementById("revenueInput").value) || 0;
+  baseValues.cogs = parseFloat(document.getElementById("cogsInput").value) || 0;
+  baseValues.fixedCosts = parseFloat(document.getElementById("fixedInput").value) || 0;
+  baseValues.variableCosts = parseFloat(document.getElementById("variableInput").value) || 0;
+  baseValues.taxRate = parseFloat(document.getElementById("taxInput").value) / 100 || 0;
+}
+
+
+      // Individual analysis functions tied to each form input
+  function analyseRevenue() {
+    updateBaseValuesFromForm();
+    const input = parseFloat(document.getElementById('revenueChangeInput').value);
+    activeFactor="revenue";
+    if (!isNaN(input)) updateChart('revenue', input);
+  }
+
+  function analyseCogs() {
+    updateBaseValuesFromForm();
+    const input = parseFloat(document.getElementById('cogsChangeInput').value);
+    activeFactor="cogs";
+    if (!isNaN(input)) updateChart('cogs', input);
+  }
+
+  function analyseFixed() {
+    updateBaseValuesFromForm();
+    const input = parseFloat(document.getElementById('fixedChangeInput').value);
+    activeFactor="fixedCosts";
+    if (!isNaN(input)) updateChart('fixedCosts', input);
+  }
+
+  function analyseVariable() {
+    updateBaseValuesFromForm();
+    const input = parseFloat(document.getElementById('variableChangeInput').value);
+    activeFactor="variableCosts";
+    if (!isNaN(input)) updateChart('variableCosts', input);
+  }
+
+  function analyseTax() {
+    updateBaseValuesFromForm();
+    const input = parseFloat(document.getElementById('taxChangeInput').value);
+    activeFactor ="taxRate"
+    if (!isNaN(input)) updateChart('taxRate', input);
+  }
+  updateChart("revenue");
+
+  function analyseSelectedChange(inputId) {
+  updateBaseValuesFromForm();
+  const input = parseFloat(document.getElementById(inputId).value);
+  if (!isNaN(input)) updateChart(input);
+}
+document.getElementById("factorSelect").addEventListener("change", () => {
+  updateBaseValuesFromForm();
+  updateChart(); // No specific highlight, just full sensitivity
+});
+
+
+</script>
+
+
+
+
+
+<script>
+  function toggleForm(id) {
+    const element = document.getElementById(id);
+    if (element) {
+      element.style.display = (element.style.display === 'none') ? 'block' : 'none';
+    }
+  }
+</script>
+
+<script>
+  document.getElementById("inputForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const revenue = document.getElementById("revenueInput").value.trim();
+    const cogs = document.getElementById("cogsInput").value.trim();
+    const fixedCosts = document.getElementById("fixedInput").value.trim();
+    const variableCosts = document.getElementById("variableInput").value.trim();
+    const taxRate = document.getElementById("taxInput").value.trim();
+
+    // Validate numeric input
+    if ([revenue, cogs, fixedCosts, variableCosts, taxRate].some(val => isNaN(val) || val === "")) {
+      document.getElementById("resultOutput").textContent = "Please enter valid numeric values.";
+      return;
+    }
+
+    const params = new URLSearchParams({
+      revenue,
+      cogs,
+      fixedCosts,
+      variableCosts,
+      taxRate
+    });
+
+    fetch("http://localhost:8080/api/analysis/calculate", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      body: params.toString()
+    })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error("Failed to calculate profit");
+        }
+        return response.json();
+      })
+      .then(data => {
+        const formattedProfit = new Intl.NumberFormat('en-KE', {
+          style: 'currency',
+          currency: 'KES',
+          maximumFractionDigits: 0
+        }).format(data);
+          
+        updateChart(activeFactor);
+
+        document.getElementById("profitOutput").textContent = formattedProfit;
+        document.getElementById("resultOutput").textContent = "Base profit calculation successful.";
+      })
+      .catch(error => {
+        console.error("Error:", error);
+        document.getElementById("resultOutput").textContent = "An error occurred. Please check your inputs.";
+      });
+  });
+
+  const baseUrl = 'http://localhost:8080/analysis/sensitivity';
+
+  async function sendSensitivityRequest(factor, change,outputElementId) {
+    try {
+      const revenue = parseFloat(document.getElementById("revenueInput").value);
+      const cogs = parseFloat(document.getElementById("cogsInput").value);
+      const fixedCosts = parseFloat(document.getElementById("fixedInput").value);
+      const variableCosts = parseFloat(document.getElementById("variableInput").value);
+      const taxRate = parseFloat(document.getElementById("taxInput").value);
+
+      const baseRequest = {
+        revenue,
+        cogs,
+        fixedCosts,
+        variableCosts,
+        taxRate
+      };
+
+      const response = await fetch(`${baseUrl}?factor=${factor}&change=${change}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(baseRequest)
+      });
+
+       if (!response.ok) {
+       throw new Error('Request failed');
+       }
+
+
+      const resultText = await response.text();
+
+      console.log("Server response:", resultText);
+
+
+    // Extract values using regex
+    const match = resultText.match(/New Profit:\s*([\d,\.]+).*?Change:\s*([\d\.]+)%/i);
+    if (match) {
+      const newProfit = parseFloat(match[1].replace(/,/g, ""));
+      const changePercent = parseFloat(match[2]);
+
+      document.getElementById(outputElementId).innerText =
+        `New Profit: KES ${newProfit.toLocaleString()}\nChange: ${changePercent.toFixed(2)}%`;
+    } else {
+      document.getElementById(outputElementId).innerText = resultText; // fallback if pattern doesn't match
+    }
+
+    } catch (error) {
+      document.getElementById(outputElementId).innerText = 'Error: ' + error.message;
+    }
+
+  }
+
+function analyseRevenue() {
+    const input = parseFloat(document.getElementById('revenueChangeInput').value);
+    activeFactor="revenue";
+    if (!isNaN(input)) updateChart('revenue', input);
+    sendSensitivityRequest("revenue",input,"resultOutput");
+  }
+
+  function analyseCogs() {
+    const input = parseFloat(document.getElementById('cogsChangeInput').value);
+    activeFactor="cogs";
+    if (!isNaN(input)) updateChart('cogs', input);
+    sendSensitivityRequest("cogs",input,"resultOutput2");
+  }
+
+  function analyseFixed() {
+    const input = parseFloat(document.getElementById('fixedChangeInput').value);
+    activeFactor="fixedCosts";
+    if (!isNaN(input)) updateChart('fixedCosts', input);
+    sendSensitivityRequest("fixedCosts",input,"resultOutput3");
+  }
+
+  function analyseVariable() {
+    const input = parseFloat(document.getElementById('variableChangeInput').value);
+    activeFactor="variableCosts";
+    if (!isNaN(input)) updateChart('variableCosts', input);
+    sendSensitivityRequest("variableCosts",input,"resultOutput4");
+  }
+
+  function analyseTax() {
+    const input = parseFloat(document.getElementById('taxChangeInput').value);
+    activeFactor ="taxRate"
+    if (!isNaN(input)) updateChart('taxRate', input);
+    sendSensitivityRequest("taxRate",input,"resultOutput5");
+  }
+  updateChart("revenue");
+  
+
+</script>
+
+
+    </section><!-- /Portfolio Details Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="d-flex align-items-center">
+            <span class="sitename">SmartFinance</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Kenya Brewery Limited</p>
+            <p>P. O. BOX 30161 00100 | GPO, Nairobi, Kenya</p>
+            <p class="mt-3"><strong>Phone:</strong> <span> +254 20 864 4000, +254 711 018 000, +254 721 985 </span></p>
+            <p><strong>Email:</strong> <span>info@example.com</span></p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="https://www.eabl.com/">EABL</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="https://www.eabl.com/our-brands">Our brands</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="https://www.eabl.com/investors/financial-results">Financial results</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="https://www.eabl.com/investors/financial-results">Our Business</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="Budget.html">Budgeting Plan</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="Investments.html">Investment Assessment</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="Expenses.html">Expense Management</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="Debt.html">Debt Management</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="Forecasting.html">Forecasting</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="Credit.html">Credit</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12">
+          <h4>Follow Us</h4>
+          <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+          <div class="social-links d-flex">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">SmartFinance</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">JG</a>
+      </div>
+    </div>
+
+   
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+ <script src="assets/js/main.js"></script>
+
+
+
+</body>
+
+</html>

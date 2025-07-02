@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Investment Viability</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Moderna
+  * Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="portfolio-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">SmartFinance</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="starter-page.html">Home</a></li>
+          <li><a href="Investments.html" class="active">Investments</a></li>
+          
+          <li><a href="Budget.html">Budget</a></li>
+          <li><a href="Expenses.html">Expenses</a></li>
+          <li><a href="Debt.html">Debt</a></li>
+          <li><a href="Forecasting.html">Forecasting</a></li>
+          <li><a href="Credit.html">Credit</a></li>
+          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container position-relative">
+        <h1>Investment Assessment</h1>
+        <p>Track your investment Viability</p>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="starter-page.html">Home</a></li>
+            <li class="current">Investments</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      
+      <div class="container mt-4">
+        <div class="row justify-content-center">
+      
+          <!-- ROI Box -->
+          <div class="col-md-4 mb-4">
+            <div class="p-3 border rounded shadow-sm">
+              <h3 style="color: #d6991c;">Return on Investment</h3>
+              <button id="roi" class="btn btn-outline-success mb-3" onclick="toggleForm('roiForm')">ROI</button>
+      
+              <div id="roiForm" style="display: none;">
+                <form id ="roiInputform">
+                  <div class="mb-3">
+                    <label class="form-label">Initial Value of Investment</label>
+                    <input type="number" class="form-control"id="initialValue" placeholder="Initial Value">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Current Value of Investment</label>
+                    <input type="number" class="form-control" id = "currentValue" placeholder="Current Value">
+                  </div>
+                  <button type="button" onClick="submitROI()" class="btn btn-success">assess</button>
+                  <div id="ROIresult" class="mt-2 text-success"></div>
+
+                </form>
+              </div>
+            </div>
+          </div>
+      
+          <!-- PBP Box -->
+          <div class="col-md-4 mb-4">
+            <div class="p-3 border rounded shadow-sm">
+              <h3 style="color: #d6991c;">Payback Period</h3>
+              <button Id="pbp" class="btn btn-outline-success mb-3" onclick="toggleForm('pbpForm')">PBP</button>
+      
+              <div id="pbpForm" style="display: none;">
+                <form id ="pbpForm">
+                  <div class="mb-3">
+                    <label class="form-label">Initial Investment</label>
+                    <input type="number" class="form-control" id="initialInvestment" placeholder="Initial Investment">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Annual Revenue</label>
+                    <input type="number" class="form-control" id="annualIncome" placeholder="Annual Income">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Expected Payback Period</label>
+                    <input type="number" class="form-control" id="expectedPayback" placeholder="Expected Payback (years)"required>
+                  </div>
+                  <button type="button" onclick="submitPBP()" class="btn btn-success">assess</button>
+                  <div id="PBPresult" class="mt-2 text-success"></div>
+                  
+                </form>
+              </div>
+            </div>
+          </div>
+      
+          <!-- ARR Box -->
+          <div class="col-md-4 mb-4">
+            <div class="p-3 border rounded shadow-sm">
+              <h3 style="color: #d6991c;">Accounting Rate of Return</h3>
+              <button id="arr" class="btn btn-outline-success mb-3" onclick="toggleForm('arrForm')">ARR</button>
+      
+              <div id="arrForm" style="display: none;">
+                <form>
+                  <div class="mb-3">
+                    <label class="form-label">Average Investment Value</label>
+                    <input type="number" class="form-control" id="averageInvestmentValue" placeholder="Average Investment(initial investment+ any salvage value)" required>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Annual Profit</label>
+                    <input type="number" class="form-control"id="annualProfit" placeholder="Annual Profit" required>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Expected Rate of Return</label>
+                    <input type="number" class="form-control"id="minRequiredRate" placeholder="minRequiredRate (15%/o.15)" required>
+                  </div>
+                  <button type="button" onclick="submitARR()" class="btn btn-success">assess</button>
+                  <div id="ARRresult" class="mt-2 text-success"></div>
+
+                </form>
+              </div>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+      <div class="container px-5">
+      <button onclick="submitFullAssessment()" style="color: #d6991c;" text-allign="text-center">Submit Full Investment Assessment</button>
+      <div id="assessmentResult"></div>
+      </div>
+
+      <!-- Toggle Script -->
+      <script>
+        function toggleForm(formId) {
+          const form = document.getElementById(formId);
+          form.style.display = form.style.display === "none" ? "block" : "none";
+        }
+      </script>
+      
+    </section><!-- /Portfolio Section -->
+
+  </main>
+  <div class="container">
+    <div class="row justify-content-center">
+
+    <div class="col-md-4 mb-4">
+    <div class="card" style="width: 18rem;">
+      <img src="https://foundr.com/wp-content/uploads/2024/03/What-is-roi.jpg.webp" class="card-img-top" alt="ROI">
+    <div class="card-body">
+      <h5 class="card-title"><strong>Return on Investment</strong></h5>
+      <p class="card-text">Return on investment (ROI) allows you to measure the profitability of investments.ROI essentially compares how much you made on an investment compared to how much you put into it. It’s a metric that businesses and investors use to determine the value of their investments</p>
+      <a href="#" class="btn btn-outline-success">Check the Return On Investment</a>
+    </div>
+  </div>
+ </div>
+
+ <div class="col-md-4 mb-4">
+  <div class="card" style="width: 18rem;">
+    <img src="https://theinnovidea.com/wp-content/uploads/2023/09/Untitled-12.png.webp" class="card-img-top" alt="ROI">
+    <div class="card-body">
+      <h5 class="card-title"><strong>Payback Period</strong></h5>
+      <p class="card-text">PBP indicates the duration required by a project to recover the initial investment through cumulative cash flows. Additionally, managers utilize PBP to determine the projected duration for a project to recoup its investment. Generally, projects with a shorter PBP are deemed acceptable for a company. It fundamentally gauges the duration required to reach the break-even point. 
+
+      </p>
+      <a href="#" class="btn btn-outline-success">Check the Payback Period</a>
+    </div>
+  </div>
+  </div>
+
+  <div class="col-md-4 mb-4">
+  <div class="card" style="width: 18rem;">
+      <img src="https://i.ytimg.com/vi/rYXPJJ6Av9c/maxresdefault.jpg" class="card-img-top" alt="">
+    <div class="card-body">
+      <h5 class="card-title"><strong>Accounting Rate of Return</strong></h5>
+      <p class="card-text">The Accounting Rate of Return (ARR) is a financial measure that evaluates the profitability of an investment by comparing the average annual accounting profit produced by the investment to its initial cost, presented as a percentage. It's a straightforward and comprehensible approach for assessing investment projects. 
+
+      </p>
+      <a href="#" class="btn btn-outline-success">Check the Rate of Return</a>
+    </div>
+  </div>
+</div>
+</div>
+
+
+  <footer id="footer" class="footer dark-background">
+
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="d-flex align-items-center">
+            <span class="sitename">SmartFinance</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Kenya Brewery Limited</p>
+            <p>P. O. BOX 30161 00100 | GPO, Nairobi, Kenya</p>
+            <p class="mt-3"><strong>Phone:</strong> <span> +254 20 864 4000, +254 711 018 000, +254 721 985 </span></p>
+            <p><strong>Email:</strong> <span>info@example.com</span></p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="https://www.eabl.com/">EABL</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="https://www.eabl.com/our-brands">Our brands</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="https://www.eabl.com/investors/financial-results">Financial results</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="https://www.eabl.com/investors/financial-results">Our Business</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="Budget.html">Budgeting Plan</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="Investments.html">Investment Assessment</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="Expenses.html">Expense Management</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="Debt.html">Debt Management</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="Forecasting.html">Forecasting</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="Credit.html">Credit</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12">
+          <h4>Follow Us</h4>
+          <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+          <div class="social-links d-flex">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">SmartFinance</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">JG</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!--Script to API-->
+<script>
+  // ROI Submission
+  function submitROI() {
+    const initial = parseFloat(document.getElementById("initialValue").value);
+    const current = parseFloat(document.getElementById("currentValue").value);
+
+    if (isNaN(initial) || isNaN(current)) {
+      document.getElementById("ROIresult").textContent = "Please enter valid numbers.";
+      return;
+    }
+
+    const payload = {
+      initialInvestment: initial,
+      currentValue: current
+    };
+
+    fetch("http://localhost:8080/api/investment/assess-roi", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(payload)
+    })
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("ROIresult").textContent = data;
+    })
+    .catch(error => {
+      document.getElementById("ROIresult").textContent = "Error: " + error;
+    });
+  }
+
+  // PBP Submission
+  function submitPBP() {
+    const initial = parseFloat(document.getElementById("initialInvestment").value);
+    const annual = parseFloat(document.getElementById("annualIncome").value);
+
+    if (isNaN(initial) || isNaN(annual) || annual === 0) {
+      document.getElementById("PBPresult").textContent = "Please enter valid numbers.";
+      return;
+    }
+
+    const payload = {
+      initialInvestment: initial,
+      annualRevenue: annual
+    };
+
+    fetch("http://localhost:8080/api/investment/assess-pbp", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(payload)
+    })
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("PBPresult").textContent = data;
+    })
+    .catch(error => {
+      document.getElementById("PBPresult").textContent = "Error: " + error;
+    });
+  }
+
+  // ARR Submission
+  function submitARR() {
+    const averageInvestmentValue = parseFloat(document.getElementById("averageInvestmentValue").value);
+    const annualProfit = parseFloat(document.getElementById("annualProfit").value);
+
+    if (isNaN(avgInvestment) || isNaN(annualProfit) || averageInvestmentValue === 0) {
+      document.getElementById("ARRresult").textContent = "Please enter valid numbers.";
+      return;
+    }
+
+    const payload = {
+      averageInvestment: averageInvestmentValue,
+      annualProfit: annualProfit
+    };
+
+    fetch("http://localhost:8080/api/investment/assess-arr", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(payload)
+    })
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("ARRresult").textContent = data;
+    })
+    .catch(error => {
+      document.getElementById("ARRresult").textContent = "Error: " + error;
+    });
+  }
+    function submitFullAssessment() {
+    // Collect inputs
+    const initialValue = parseFloat(document.getElementById("initialValue").value);
+    const currentValue = parseFloat(document.getElementById("currentValue").value);
+    const initialInvestment = parseFloat(document.getElementById("initialInvestment").value);
+    const annualIncome = parseFloat(document.getElementById("annualIncome").value);
+    const annualProfit = parseFloat(document.getElementById("annualProfit").value);
+    const averageInvestmentValue = parseFloat(document.getElementById("averageInvestmentValue").value);
+    const minRequiredRate = parseFloat(document.getElementById("minRequiredRate").value);
+    const expectedPayback = parseFloat(document.getElementById("expectedPayback").value);
+
+    // Validate input
+    if (
+      [initialValue, currentValue, initialInvestment, annualIncome, annualProfit,
+       averageInvestmentValue, minRequiredRate, expectedPayback].some(isNaN)
+    ) {
+      document.getElementById("assessmentResult").textContent = "Please fill all fields with valid numbers.";
+      return;
+    }
+
+    // Build payload
+    const payload = {
+      initialValue,
+      currentValue,
+      initialInvestment,
+      annualIncome,
+      annualProfit,
+      averageInvestmentValue,
+      minRequiredRate,
+      expectedPayback
+    };
+
+    // POST request to combined endpoint
+    fetch("http://localhost:8080/api/investment/assess", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(payload)
+    })
+    .then(response => response.json())
+    .then(data => {
+      // Display the results
+      const resultHTML = `
+        <strong>ROI:</strong> ${(data.roi * 100).toFixed(2)}%<br>
+        <strong>PBP:</strong> ${data.pbp.toFixed(2)} years<br>
+        <strong>ARR:</strong> ${(data.arr * 100).toFixed(2)}%<br>
+        <strong>Viability of Investment:</strong><br><pre>${data.viabilityMessage}</pre>
+      `;
+      document.getElementById("assessmentResult").innerHTML = resultHTML;
+    })
+    .catch(error => {
+      document.getElementById("assessmentResult").textContent = "Error: " + error;
+    });
+  }
+
+</script>
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

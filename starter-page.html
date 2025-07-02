@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>KBL financial management</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Moderna
+  * Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="starter-page-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">SmartFinance</h1>
+      </a>
+      
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="starter-page.html">Home</a></li>
+          <li><a href="Investments.html">Investments</a></li>
+          <li><a href="Budget.html">Budget</a></li>
+          <li><a href="Expenses.html">Expenses</a></li>
+          <li><a href="Debts.html">Debts</a></li>
+          <li><a href="Forecasting.html">Forecasting</a></li>
+        
+          <li><a href="Credit.html">Credit</a></li>
+          
+          
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container position-relative">
+        
+
+        <div class="container-fluid">
+          <img src="https://media.licdn.com/dms/image/v2/C560BAQEYhBJThzxc_w/company-logo_200_200/company-logo_200_200/0/1646062637791/kenya_breweries_limited_logo?e=2147483647&v=beta&t=QIDLJl0YIdSqSQ6VeA2qWMJ7sTdgHj7Vk__gKLoASN0" class="img-fluid"  alt="">
+        </div>
+
+      
+        <h1><strong>KBL Finances</strong></h1>
+    
+    
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+              <a href="Budget.html ">Budgeting Plan</a>
+            </div>
+            <div class="col">
+              <a href="Investments.html">Investment Assessment</a>
+            </div>
+            <div class="col">
+              <a href="Expenses.html">Expenses Management</a>
+         
+            </div>
+          </div>
+        </div>
+
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+            <a href="Debts.html">Debt Management</a>
+            </div>
+            <div class="col">
+              <a href="Forecasting.html">Performance Forecasting</a>
+            </div>
+            <div class="col">
+              <a href="Credit.html">Credit Validation</a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Starter Section Section -->
+    <section id="starter-section" class="starter-section section">
+
+      <!-- Section Title -->
+      
+      
+      
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Finance Statistics</h2>
+
+      </div>
+
+      
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <div class="row">
+              <div class="col">
+                <!-- Main Container -->
+<div class="container py-4">
+  <div class="card p-4 mb-3 shadow-sm">
+  
+
+    <!-- Grid Row for Pie Chart and Table -->
+    <!-- Container and Card -->
+<div class="container py-4">
+  <div class="card p-4 mb-3 shadow-sm">
+
+    <h3 ><a href="Budget.html" class="mb-4" style="color: #1e4356;"><strong>Budget Plan</strong></h3>
+      <p>Smartfinance budgeting tool</p>
+
+    <div class="row">
+      <!-- Pie Chart Column -->
+      <div class="col-md-6 d-flex justify-content-center align-items-center">
+        <div style="width: 100%; max-width: 400px;">
+          <canvas id="capitalDistributionChart"></canvas>
+        </div>
+      </div>
+
+      <!-- Table Column -->
+      <div class="col-md-6">
+        <h4 class="mb-3">Current Budget</h4>
+        <div id="budgetDisplay" class="table-responsive">
+          <table class="table table-bordered table-striped">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Expenses</th>
+                <th scope="col">Category</th>
+                <th scope="col"> Amount(ksh)</th>
+                <th scope="col">Description</th>
+              </tr>
+            </thead>
+            <tbody id="budgetTableBody">
+              <tr><td>Manufacturing costs</td><td>15,000,000</td></tr>
+              <tr><td>Raw Materials</td><td>7,500,000</td></tr>
+              <tr><td>Packaging Materials</td><td>3,700,000</td></tr>
+              <tr><td>Distribution and Logistics</td><td>16,000,000</td></tr>
+              <tr><td>Marketing and Sales</td><td>30,000,000</td></tr>
+              <tr><td>Regulatory and Compliance</td><td>11,000,000</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div> <!-- End row -->
+
+  </div> <!-- End card -->
+</div> <!-- End container -->
+
+<!-- Chart.js Script -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const ctx = document.getElementById('capitalDistributionChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'pie',
+      data: {
+        labels: ['Operating Expenses', 'Savings', 'Growth and Expansion'],
+        datasets: [{
+          label: 'Capital Distribution',
+          data: [50, 20, 30],
+          backgroundColor: [
+            'rgba(255, 99, 132, 0.2)',
+            'rgba(54, 162, 235, 0.2)',
+            'rgba(255, 206, 86, 0.2)'
+          ],
+          borderColor: [
+            'rgba(255, 99, 132, 1)',
+            'rgba(54, 162, 235, 1)',
+            'rgba(255, 206, 86, 1)'
+          ],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { position: 'top' },
+          tooltip: {
+            callbacks: {
+              label: function (tooltipItem) {
+                return tooltipItem.label + ': ' + tooltipItem.raw + '%';
+              }
+            }
+          }
+        }
+      }
+    });
+  });
+</script>
+
+
+        <div class="col">
+          <div class="container py-4">
+            <div class= "card p-4 mb-3 shadow sm">
+              <h3><a href ="Investments.html" style="color: #1e4356;"><strong>Investments</strong></a></h3>
+              <p>Investment Metrics
+
+                <select id="calculationSelect" class="form-select"  multiple aria-label="Multiple select example">
+                  <option selected></option>
+                  <option value="">-- Select Investment Assessment Tool --</option>
+                    <option value="roi" a href="#roi">Return on Investment(ROI)</a></option>
+                  <option value="pbp" a href="Investments.html">Payback period (PBP)</option>
+                  <option value="arr" a href="Investments.html">Accounting Rate of Return (ARR)</option>
+                </select>
+                
+                
+              </p>
+              <div class="row text-center">
+                <div class="col-md-4 mb-3">
+                  <div class="card shadow-sm p-3">
+                    <h5>Total Investment</h5>
+                    <p class="fs-4 text-success">ksh:500,000</p>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="card shadow-sm p-3">
+                    <h5>Return on Investment</h5>
+              
+                    
+                    <p class="fs-4 text-success">12.5%</p>
+                    
+                            <!-- index.html -->
+
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="card shadow-sm p-3">
+                    <h5>Payback period</h5>
+                    <p class="fs-4 text-success">2 years</p>
+                  </div>
+                </div>
+              
+
+              <div class="col-md-4 mb-3">
+                <div class="card shadow-sm p-3">
+                  <h5>Accounting Rate of Return</h5>
+                  <p class="fs-4 text-success">20%</p>
+                </div>
+              </div>
+            </div>
+            <a href="Investments.html#23">View More
+            </a>
+            
+            
+              
+              
+            </div>
+          </div>
+         </div>
+
+         <div class="col">
+          <div class="container py-4">
+            <div class="card p-4 mb-3 shadow-sm">
+              <h3><a href="Expenses.html" style="color: #1e4356;"><strong>Expenses</strong></a></h3>
+              <p>Your expenses</p>
+        
+              <!-- Bar Chart Container -->
+              <div class="d-flex justify-content-center">
+                <div style="width:600%; max-width: 900px;">
+                  <canvas id="expensesChart"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+         </div>
+        
+        <!-- Chart.js CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        
+        <!-- Chart Initialization Script -->
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            const ctx = document.getElementById('expensesChart').getContext('2d');
+        
+            new Chart(ctx, {
+              type: 'bar',
+              data: {
+                labels: [
+                  ['Manufacturing', 'Costs'],
+                  ['Marketing & Sales', 'Costs'],
+                  ['Packaging' ,'Costs'],
+                  ['Distribution', 'Costs'],
+                  ['Regulatory &','compliance costs']
+                ],
+                datasets: [
+                  {
+                    label: 'Actual Expenses',
+                    data: [35000000, 25000000, 10000000, 15000000,22000000],
+                    backgroundColor: 'rgba(255, 99, 132, 0.6)'
+                  },
+                  {
+                    label: 'Budget Allocation',
+                    data: [40000000, 30000000, 12000000, 18000000,30000000], 
+                    backgroundColor: 'rgba(54, 162, 235, 0.6)'
+                  }
+                ]
+              },
+              options: {
+                responsive: true,
+                plugins: {
+                  legend: {
+                    position: 'top'
+                  },
+                  tooltip: {
+                    mode: 'index',
+                    intersect: false
+                  }
+                },
+                scales: {
+                  y: {
+                    beginAtZero: true,
+                    title: {
+                      display: true,
+                      text: 'Amount (ksh)'
+                    }
+                  },
+                  x: {
+                    title: {
+                      display: true,
+                      text: 'Expense Categories'
+                    }
+                  }
+                }
+              }
+            });
+          });
+        </script>
+        
+      <div class="row">
+       <div class="col">
+        <div class="container py-8">
+          <div class= "card p-4 mb-3 shadow sm">
+            <h3>
+              <a href="Debt.html" style="color: #1e4356; text-decoration: none;"><strong>Debt</strong>
+                
+              </a>
+            </h3>
+            
+            <p>Current Debts</p>
+
+            <div id="currentDebt"class="table-responsive">
+              <table class="table table-bordered table-striped">
+                <thead class="thead-dark">
+                  <tr>
+               
+                    <th scope="col">Debt_Type</th>
+                    <th scope="col">Amount(ksh)</th>
+                    <th scope="col">Interest Rate</th>
+                    <th scope="col">Expiry Date</th>
+                    
+                  </tr>
+                </thead>
+                <tbody id="debtTableBody">
+                  
+                  <tr>
+                    
+                    <td>Commercial Bank Loans</td>
+                    <td>15,000,000</td>
+                    <td>15%</td>
+                    <td>2028-10-3</td>
+                  </tr>
+                  <tr>
+                    
+                    <td>Overdraft Facility</td>
+                    <td>750000</td>
+                    <td>20%</td>
+                    <td>2027-8-4</td>
+                  </tr>
+                  <tr>
+                  
+                    <td>Import Financing/ Trade credit</td>
+                    <td>370000</td>
+                    <td>10%</td>
+                    <td>2028-3-15</td>
+                    
+                  </tr>
+                  <tr>
+                    <td> Employee Sacco Loan</td>
+                    <td>520000</td>
+                    <td>20%</td>
+                    <td>2025-11-4</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            
+          </div>
+          
+        </div>
+      </div>
+
+      <script>
+   document.addEventListener("DOMContentLoaded", function () {
+  fetch("http://localhost:8080/api/debts/")
+    .then(response => response.json())
+    .then(data => {
+      const tableBody = document.getElementById("debtTableBody");
+      tableBody.innerHTML = ""; 
+
+      data.forEach(debt => {
+        const row = `
+          <tr>
+            <td>${debt.id}</td>
+            <td>${debt.debtType}</td>
+            <td>${Number(debt.debtAmount).toLocaleString()}</td>
+            <td>${debt.debtInterestRate}%</td>
+            <td>${debt.debtExpiryDate}</td>
+          </tr>
+        `;
+        tableBody.insertAdjacentHTML("beforeend", row);
+      });
+    })
+    .catch(error => {
+      console.error("Error loading debts:", error);
+      document.getElementById("debtTableBody").innerHTML =
+        "<tr><td colspan='5'>Failed to load data</td></tr>";
+    });
+});
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function(){
+    fetch("http://localhost:8080/api/Budget/")
+     .then(response => response.json())
+     .then(data => {
+        const tableBody = document.getElementById("budgetTableBody");
+        tableBody.innerHTML = "";
+
+        data.forEach( budget => {
+          const row =`
+            <tr>
+              <td>${budget.id}</td>
+              <td>${budget.category}</td>
+              <td>${ Number(budget.estimatedAmount).toLocaleString()}</td>
+              <td>${budget.description}</td>
+            </tr>
+          `;
+          tableBody.insertAdjacentHTML("beforeend",row);
+        });
+     })
+     .catch(error => {
+        console.error("Error loading debts:", error);
+        document.getElementById("budgetTableBody").innerHTML=
+          "<tr><td colspan='5'> Failed to load data</td></tr>";
+     });
+  });
+</script>
+
+       
+        
+
+        <div class="col">
+        <div class="container py-4">
+          <!-- Include Plotly.js -->
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+<div class="card p-4 mb-3 shadow-sm">
+  <h3><strong>Forecasting</strong></h3>
+  <div class="card" style="width: 18rem;">
+    
+    <p>Factors/variables to measure performance</p>
+    <select class="form-select" multiple aria-label="Multiple select example">
+      <option selected>Key Performance Indicators</option>
+      <option value="1">Revenue/Income</option>
+      <option value="2">Cost of Goods Sold</option>
+      <option value="3">Fixed costs</option>
+      <option value="4">Variable costs</option>
+      <option value="5">Tax Rate</option>
+    </select>
+  </div>
+
+  <!-- Waterfall Chart Container -->
+  <div id="waterfallChart" style="height: 400px;"></div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var data = [{
+      type: "waterfall",
+      x: ["Start", "Revenue", "COGS", "Fixed Costs", "Variable Costs", "Tax Rate", "Net Profit"],
+      y: [0, 50000, -20000, -10000, -5000, -5000, null],
+      text: ["", "+50,000", "-20,000", "-10,000", "-5,000", "-5,000", "Total"],
+      connector: { line: { color: "rgb(63, 63, 63)" } },
+      totals: { marker: { color: "rgb(0, 0, 0)" } }
+    }];
+    var layout = {
+      title: "Profit Breakdown",
+      xaxis: { type: "category" },
+      yaxis: { title: { text: "Amount (KES)" } },
+      waterfallgap: 0.5
+    };
+    Plotly.newPlot('waterfallChart', data, layout);
+  });
+</script>
+
+            
+          
+          
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="container py-4">
+          <div class= "card p-4 mb-3 shadow sm">
+            <h3><strong>Credit</strong></h3>
+            <p>Validate credit</p>
+            <div style="width: 100%; height: 300px;">
+              <canvas id="forecastChart"></canvas>
+            </div>
+          </div>
+          
+          <!-- Chart Script -->
+             <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              const ctx = document.getElementById('forecastChart').getContext('2d');
+              new Chart(ctx, {
+                type: 'line',
+                data: {
+                  labels: ['Q1', 'Q2', 'Q3', 'Q4'],
+                  datasets: [
+                    {
+                      label: 'Revenue',
+                      data: [1200000, 1500000, 1400000, 1700000],
+                      backgroundColor: 'rgba(54, 162, 235, 0.6)'
+                    },
+                    {
+                      label: 'Debt',
+                      data: [500000, 600000, 550000, 580000],
+                      backgroundColor: 'rgba(255, 99, 132, 0.6)'
+                    }
+                  ]
+                },
+                options: {
+                  responsive: true,
+                  maintainAspectRatio: false,
+                  plugins: {
+                    legend: { position: 'top' }
+                  },
+                  scales: {
+                    y: {
+                      beginAtZero: true,
+                      title: { display: true, text: 'Amount (USD)' }
+                    }
+                  }
+                }
+              });
+            });
+          </script>
+         
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  
+  
+  
+<script>
+  document.getElementById("calculationSelect").addEventListener("change", function () {
+    const selected = this.value;
+
+    if (selected === "roi") {
+      // Redirect to the target page with anchor to #roiForm
+      window.location.href = "Investments.html#roiForm";
+    }
+    if (selected === "arr"){
+
+      window.location.href = "Investments.html#arrForm"
+    }
+    if (selected === "pbp"){
+
+      window.location.href ="Investments.html#pbpForm"
+    }
+  });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    
+    const hash = window.location.hash;
+    if (hash === "#roiForm") {
+      toggleForm("roiForm");
+    }
+  });
+
+  function toggleForm(formId) {
+    const form = document.getElementById(formId);
+    if (form) {
+      form.classList.remove("d-none"); // Show form
+      form.scrollIntoView({ behavior: "smooth" }); // Optional: scroll to it
+    }
+  }
+    document.addEventListener("DOMContentLoaded", function () {
+    
+    const hash = window.location.hash;
+    if (hash === "#pbpForm") {
+      toggleForm("pbpForm");
+    }
+  });
+
+  function toggleForm(formId) {
+    const form = document.getElementById(formId);
+    if (form) {
+      form.classList.remove("d-none"); // Show form
+      form.scrollIntoView({ behavior: "smooth" }); // Optional: scroll to it
+    }
+
+
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    
+    const hash = window.location.hash;
+    if (hash === "#arrForm") {
+      toggleForm("arrForm");
+    }
+  });
+
+  function toggleForm(formId) {
+    const form = document.getElementById(formId);
+    if (form) {
+      form.classList.remove("d-none"); // Show form
+      form.scrollIntoView({ behavior: "smooth" }); // Optional: scroll to it
+    }
+  }
+
+</script>
+
+<script>
+   function CurrentBudget(){
+    fetch("http://localhost:8080/api/Budget/")
+    .then( response => {
+      if (!response.ok){
+        throw new Error("failed to fetch budget")
+      
+
+      }
+    }
+
+    )
+   }
+</script>
+
+
+      
+          
+            
+      </div><!-- End Section Title -->
+
+      
+        </div>
+      </div>
+
+    </section><!-- /Starter Section Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="d-flex align-items-center">
+            <span class="sitename">SmartFinance</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Kenya Brewery Limited</p>
+            <p>P. O. BOX 30161 00100 | GPO, Nairobi, Kenya</p>
+            <p class="mt-3"><strong>Phone:</strong> <span> +254 20 864 4000, +254 711 018 000, +254 721 985 </span></p>
+            <p><strong>Email:</strong> <span>info@example.com</span></p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="https://www.eabl.com/">EABL</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="https://www.eabl.com/our-brands">Our brands</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="https://www.eabl.com/investors/financial-results">Financial results</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="https://www.eabl.com/investors/financial-results">Our Business</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="Budget.html">Budgeting Plan</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="Investments.html">Investment Assessment</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="Expenses.html">Expense Management</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="Debt.html">Debt Management</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="Forecasting.html">Forecasting</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="Credit.html">Credit</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12">
+          <h4>Follow Us</h4>
+          <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+          <div class="social-links d-flex">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">SmartFinance</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">JG</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

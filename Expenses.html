@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Expenses Management</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Moderna
+  * Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="Expenses-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">SmartFinance</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="starter-page.html">Home</a></li>
+          <li><a href="Investments.html">Investments</a></li>
+          <li><a href="Budget.html">Budget</a></li>
+          <li><a href="Expenses.html" class="active">Expenses</a></li>
+          <li><a href="Debt.html">Debts</a></li>
+          <li><a href="Forecasting.html">Forecasting</a></li>
+          <li><a href="Credit.html">Credit</a></li>
+          
+          
+          
+          
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container position-relative">
+        <h1>Expenses Management</h1>
+        <p>Monitor your expenses' spending.</p>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="starter-page.html">Home</a></li>
+            <li class="current">Expenses</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Blog Posts Section -->
+    <section id="blog-posts" class="blog-posts section">
+      <div class="container">
+              <img src="https://imageio.forbes.com/specials-images/imageserve/67874a28f017c80ed324338f/White-card-with-the-text-Keep-track-of-your-expenses-on-wooden-desk-background-/960x0.jpg?format=jpg&width=1440"alt=""class="img-fluid">
+             </div>
+
+
+      </div>
+      
+    </section>
+    <section>
+      <div class="container-fluid">
+             <h3 style="margin-top: 20px;">Expenses Overview</h3>
+             <hr style="border: 2px solid #252323; width: 20%;">
+
+            </div>
+
+            <div class="row">
+            <div class="col-md-4">
+              <div class="card" id="budgetCard"style="width: 24rem;">
+            <div class="card-body">
+            <h5 class="card-title">Total Budget</h5>
+              
+              <p class="card-text" style="font-size: 2rem;"><strong> KES 42,000,000</strong></p>
+    
+          </div>
+          </div>
+              </div>
+
+              <div class="col-md-4">
+              <div class="card" id="spentCard"style="width: 24rem;">
+            <div class="card-body">
+            <h5 class="card-title">Total Spent</h5>
+              
+              <p class="card-text" style="font-size: 2rem;"><strong>KES 12,000,000</strong></p>
+           
+          </div>
+          </div>
+              </div>
+
+              <div class="col-md-4">
+              <div class="card" id="remainingCard"style="width: 24rem;">
+            <div class="card-body">
+            <h5 class="card-title">Remaining Budget</h5>
+              
+              <p class="card-text" style="font-size: 2rem;"><strong>KES 30,000,000</strong></p>
+              
+          </div>
+          </div>
+              </div>
+            </div>
+            </section>
+
+            <!--expenses management-->
+            <div class="container mt-3">
+  <div class="row align-items-center">
+    <div class="col-md-6 d-flex align-items-center">
+      <div class="me-3">
+        <h2 style="font-family: Verdana, Geneva, Tahoma, sans-serif;"><strong>Review your Expenses</strong></h2>
+      </div>
+      <button type="button" id="expenses" onclick="fetchExpenses()" class="btn btn-outline-primary me-2">Track Spending</button>
+      <div id="expensesWrapper" class="position-relative"></div>
+
+      <div class="container">
+      <div class="row" >
+        <div id="expensesCard"></div>
+      </div>
+
+
+      <!-- Wide cards go here -->
+      
+
+    </div>
+  </div>
+  </div>
+
+
+        <section>
+
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card bg-warning text-black" style="width: 28rem;"><h2>Halfway Done</h2></div>
+                <div class="card " style="width: 28rem;">
+                <div class="card-header">
+                  
+          
+                </div>
+                <ul class="list-group list-group-flush" id="halfwayList">
+
+               </ul>
+             </div>
+              </div>
+              
+              <div class="col-md-4">
+                <div class="card bg-danger text-white" style="width: 28rem;"><h2>Overspent</h2></div>
+                <div class="card" style="width: 28rem;">
+                <div class="card-header">
+    
+                </div>
+                <ul class="list-group list-group-flush" id="overspentList">
+
+               </ul>
+             </div>
+             </div>
+        
+              
+              <div class="col-md-4">
+                <div class="card bg-success text-white" style="width: 28rem;"><h2>UnderSpent</h2></div>
+                <div class="card" style="width: 28rem;">
+                <div class="card-header">
+                  
+    
+                </div>
+                <ul class="list-group list-group-flush"id= "underspentList">
+                
+               </ul>
+             </div>
+             </div>
+
+
+              </div>
+            </div>
+
+
+    </section>
+             
+         
+
+            
+
+
+  </main>
+
+  
+  <footer id="footer" class="footer dark-background">
+
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="d-flex align-items-center">
+            <span class="sitename">SmartFinance</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Kenya Brewery Limited</p>
+            <p>P. O. BOX 30161 00100 | GPO, Nairobi, Kenya</p>
+            <p class="mt-3"><strong>Phone:</strong> <span> +254 20 864 4000, +254 711 018 000, +254 721 985 </span></p>
+            <p><strong>Email:</strong> <span>info@example.com</span></p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="https://www.eabl.com/">EABL</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="https://www.eabl.com/our-brands">Our brands</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="https://www.eabl.com/investors/financial-results">Financial results</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="https://www.eabl.com/investors/financial-results">Our Business</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="Budget.html">Budgeting Plan</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="Investments.html">Investment Assessment</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="Expenses.html">Expense Management</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="Debt.html">Debt Management</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="Forecasting.html">Forecasting</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="Credit.html">Credit</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12">
+          <h4>Follow Us</h4>
+          <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+          <div class="social-links d-flex">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">SmartFinance</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">JG</a>
+      </div>
+    </div>
+
+  </footer>
+</main>
+
+<!--script to API-->
+<script>
+
+let expensesData = [];
+
+// Fetch and display all expenses
+function fetchExpenses() {
+  fetch("http://localhost:8080/api/Expenses/AllExpenses")
+    .then(response => response.json())
+    .then(data => {
+      expensesData = data;
+      displayExpenses(data);
+      compareExpenses(); // Call compare after loading
+    })
+    .catch(error => {
+      console.error("Error fetching expenses:", error);
+      alert("Failed to load expenses.");
+    });
+}
+
+// Display all expenses in a horizontal card layout
+function displayExpenses(data) {
+  const wrapper = document.getElementById("expensesWrapper");
+
+  // Clear previous results
+  wrapper.innerHTML = "";
+
+  if (data.length === 0) {
+    wrapper.innerHTML = "<p>No expenses to show.</p>";
+    return;
+  }
+
+  // Add layout HTML
+  wrapper.innerHTML = `
+    <h5>All Expenses</h5>
+    <div class="position-relative">
+      <button id="slideLeft" class="btn btn-light position-absolute top-50 start-0 translate-middle-y z-1 shadow"><</button>
+      <button id="slideRight" class="btn btn-light position-absolute top-50 end-0 translate-middle-y z-1 shadow">></button>
+      <div id="expensesScrollArea" class="overflow-auto">
+        <div id="expensesCard" class="d-flex flex-nowrap gap-3 p-2" style="min-width: max-content;"></div>
+      </div>
+    </div>
+  `;
+
+  const expensesCard = document.getElementById("expensesCard");
+
+  // Render cards
+  data.forEach(expense => {
+    const itemHTML = `
+      <div class="card border-success p-2 flex-shrink-0" style="width: 18rem;">
+        <div class="card-body">
+          <h6 class="card-title">${expense.category}</h6>
+          <p class="card-text">Spent: KES ${expense.amountSpent.toLocaleString()}</p>
+        </div>
+      </div>
+    `;
+    expensesCard.insertAdjacentHTML("beforeend", itemHTML);
+  });
+
+  // Scroll buttons
+  const scrollContainer = document.getElementById("expensesScrollArea");
+  document.getElementById("slideLeft").onclick = () => {
+    scrollContainer.scrollBy({ left: -300, behavior: 'smooth' });
+  };
+  document.getElementById("slideRight").onclick = () => {
+    scrollContainer.scrollBy({ left: 300, behavior: 'smooth' });
+  };
+}
+
+
+// Compare expenses via backend
+function compareExpenses() {
+  document.getElementById("halfwayList").innerHTML = "";
+  document.getElementById("overspentList").innerHTML = "";
+  document.getElementById("underspentList").innerHTML = "";
+
+  if (expensesData.length === 0) {
+    document.getElementById("comparisonresult").innerHTML = "<p class='text-warning'>No expense data available.</p>";
+    return;
+  }
+
+  fetch("http://localhost:8080/api/Expenses/compare")
+    .then(response => {
+      if (!response.ok) throw new Error("Failed to fetch comparison.");
+      return response.json();
+    })
+    .then(compareData => {
+      compareData.forEach(expense => {
+        const { category, budgeted, spent, status } = expense;
+        let listId;
+
+        if (status === "Over budget") {
+          listId = "overspentList";
+        } else if (status === "On Budget" || status === "Half-way Done") {
+          listId = "halfwayList";
+        } else if (status === "Under budget" || status === "No spending yet") {
+          listId = "underspentList";
+        }
+
+        if (listId) {
+          const itemHTML = `
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <strong>${category}</strong>
+              <span>Budget: KES ${budgeted.toLocaleString()}</span>
+              <span>Spent: KES ${spent.toLocaleString()}</span>
+            </li>
+          `;
+          document.getElementById(listId).insertAdjacentHTML('beforeend', itemHTML);
+        }
+      });
+    })
+    .catch(error => {
+      console.error("Error comparing expenses:", error);
+      document.getElementById("comparisonresult").innerHTML = "<p class='text-danger'>Error fetching comparison data.</p>";
+    });
+}
+
+// Fetch and display budget data
+
+function fetchTotalBudget() {
+  fetch("http://localhost:8080/api/Budget/")
+    .then(response => {
+      if (!response.ok) {
+        throw new Error("Failed to fetch budget");
+      }
+      return response.json();
+    })
+    .then(data => {
+      const total = data.reduce((sum, b) => sum + b.estimatedAmount, 0);
+      document.getElementById("budgetCard").innerHTML = `
+        <div class="card-body">
+          <h5 class="card-title">Total Budget</h5>
+          <p class="card-text" style="font-size: 2rem;"><strong> KES ${total.toLocaleString()}</strong></p>
+        </div>
+      `;
+    })
+    .catch(error => {
+      console.error("Error loading budget:", error);
+      document.getElementById("budgetCard").innerHTML = `
+        <div class="card-body">
+          <h5 class="card-title text-danger">Error</h5>
+          <p class="card-text">Could not load total budget.</p>
+        </div>
+      `;
+    });
+}
+
+// Call this function when the page loads
+document.addEventListener("DOMContentLoaded", fetchTotalBudget);
+
+function fetchTotalSpent() {
+  fetch("http://localhost:8080/api/Expenses/AllExpenses")
+    .then(response => {
+      if (!response.ok) throw new Error("Failed to fetch expenses");
+      return response.json();
+    })
+    .then(data => {
+      const totalSpent = data.reduce((sum, e) => sum + e.amountSpent, 0);
+      document.getElementById("spentCard").innerHTML = `
+        <div class="card-body">
+          <h5 class="card-title">Total Spent</h5>
+          <p class="card-text" style="font-size: 2rem;"><strong>KES ${totalSpent.toLocaleString()}</strong></p>
+        </div>
+      `;
+    })
+    .catch(error => {
+      console.error("Error loading spent total:", error);
+      document.getElementById("spentCard").innerHTML = `
+        <div class="card-body">
+          <h5 class="card-title text-danger">Error</h5>
+          <p class="card-text">Could not load total spent.</p>
+        </div>
+      `;
+    });
+}
+
+function fetchRemainingBudget() {
+  Promise.all([
+    fetch("http://localhost:8080/api/Budget/").then(res => res.json()),
+    fetch("http://localhost:8080/api/Expenses/AllExpenses").then(res => res.json())
+  ])
+    .then(([budgets, expenses]) => {
+      const totalBudget = budgets.reduce((sum, b) => sum + b.estimatedAmount, 0);
+      const totalSpent = expenses.reduce((sum, e) => sum + e.amountSpent, 0);
+      const remaining = totalBudget - totalSpent;
+
+      document.getElementById("remainingCard").innerHTML = `
+        <div class="card-body">
+          <h5 class="card-title">Remaining Budget</h5>
+          <p class="card-text" style="font-size: 2rem;"><strong>KES ${remaining.toLocaleString()}</strong></p>
+        </div>
+      `;
+    })
+    .catch(error => {
+      console.error("Error calculating remaining budget:", error);
+      document.getElementById("remainingCard").innerHTML = `
+        <div class="card-body">
+          <h5 class="card-title text-danger">Error</h5>
+          <p class="card-text">Could not load remaining budget.</p>
+        </div>
+      `;
+    });
+}
+document.addEventListener("DOMContentLoaded", () => {
+  fetchTotalBudget();     
+  fetchTotalSpent();      
+  fetchRemainingBudget(); 
+});
+
+
+
+
+</script>
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
